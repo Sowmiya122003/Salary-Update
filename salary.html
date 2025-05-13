@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Salary Table</title>
+  <link rel="stylesheet" href="./salary.css" />
+</head>
+<body>
+    <div class="container">
+        <h2>Employee Salary Management</h2>
+      
+        
+        <div class="form-container">
+          <input type="text" id="empName" placeholder="Name" />
+          <input type="text" id="empLoc" placeholder="Location" />
+          <input type="number" id="empSal" placeholder="Salary" />
+          <button onclick="addEmployee()">Add Employee</button>
+        </div>
+      
+        
+        <table id="salaryTable">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>EmpName</th>
+              <th>Location</th>
+              <th>Salary</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3" style="text-align:right;"><strong>Total Salary:</strong></td>
+              <td colspan="2" id="totalSalary">0</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      
+
+  <script src="./salary.js"></script>
+</body>
+</html>
